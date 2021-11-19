@@ -1,0 +1,166 @@
+// Skills
+.skills {
+    &__container {
+        row-gap: 0;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: var(--mb-2-5);
+        cursor: pointer;
+    }
+
+    &__icon,
+    &__arrow {
+        font-size: 2rem;
+        color: var(--first-color);
+    }
+
+    &__icon {
+        margin-right: var(--mb-0-75);
+    }
+
+    &__arrow {
+        margin-left: auto;
+        transition: .4s;
+    }
+
+    &__title {
+        font-size: var(--h3-font-size);
+    }
+
+    &__subtitle {
+        font-size: var(--small-font-size);
+        color: var(--text-color-light);
+    }
+
+    &__titles {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: var(--mb-0-5);
+    }
+
+    &__name {
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+    }
+
+    &__list {
+        row-gap: 1.5rem;
+        padding-left: 2.7rem;
+    }
+
+    &__bar,
+    &__percentage {
+        height: 5px;
+        border-radius: .25rem;
+    }
+
+    &__bar {
+        background-color: var(--first-color-lighter);
+    }
+
+    &__percentage {
+        display: block;
+        background-color: var(--first-color);
+    }
+
+    &__html {
+        width: 90%;
+    }
+
+    &__css {
+        width: 75%;
+    }
+
+    &__javascript {
+        width: 50%;
+    }
+
+    &__nodejs {
+        width: 25%;
+    }
+
+    &__jquery {
+        width: 20%;
+    }
+
+    &__react {
+        width: 10%;
+    }
+
+    &__scss {
+        width: 85%;
+    }
+
+    &__flexbox {
+        width: 75%;
+    }
+
+    &__bem {
+        width: 65%;
+    }
+
+    &__grid {
+        width: 85%;
+    }
+
+    &__bootstrap {
+        width: 45%;
+    }
+
+    &__media {
+        width: 75%;
+    }
+
+    &__npm {
+        width: 40%;
+    }
+
+    &__git {
+        width: 70%;
+    }
+
+    &__gulp {
+        width: 35%;
+    }
+
+    &__webpack {
+        width: 15%;
+    }
+
+    &__animates {
+        width: 55%;
+    }
+
+    &__figma {
+        width: 75%;
+    }
+
+    &__photoshop {
+        width: 85%;
+    }
+
+    &__avocode {
+        width: 30%;
+    }
+
+    &__close {
+        .skills__list {
+            height: 0;
+            overflow: hidden;
+        }
+    }
+
+    &__open {
+        .skills__list {
+            height: max-content;
+            margin-bottom: var(--mb-2-5);
+        }
+
+        .skills__arrow {
+            transform: rotate(-180deg);
+        }
+    }
+}

@@ -1,0 +1,29 @@
+// Main styles
+@import './variables/variables';
+@import './base/base';
+@import './layout/layout';
+@import './buttons/buttons';
+
+// Secondary styles
+@import './components/header';
+@import './components/_home';
+@import './components/about';
+@import './components/skills';
+@import './components/qualification';
+@import './components/services';
+@import './components/portfolio';
+@import './components/workfinding';
+@import './components/testimonial';
+@import './components/_contact';
+@import './components/_footer';
+
+// Additional styles
+@import './components/_activelink';
+@import './components/_backgroundheader';
+@import './components/_scroll';
+
+// Dark and light themes
+@import './theme/theme';
+
+// Media queries
+@import './media/media';

@@ -1,0 +1,57 @@
+// Footer
+.footer {
+    padding-top: 2rem;
+
+    &__container {
+        row-gap: 3.5rem;
+    }
+
+    &__bg {
+        background-color: var(--first-color-second);
+        padding: 2rem 0 3rem 0;
+    }
+
+    &__title {
+        font-size: var(--h1-font-size);
+        margin-bottom: var(--mb-0-25);
+    }
+
+    &__subtitle {
+        font-size: var(--small-font-size);
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    &__link {
+        &:hover {
+            color: var(--first-color-lighter);
+        }
+    }
+
+    &__social {
+        font-size: 1.25rem;
+        margin-right: var(--mb-1-5);
+
+        &:hover {
+            color: var(--first-color-lighter);
+        }
+    }
+
+    &__copy {
+        font-size: var(--smaller-font-size);
+        text-align: center;
+        margin-top: var(--mb-3);
+    }
+
+    &__title,
+    &__subtitle,
+    &__link,
+    &__social,
+    &__copy {
+        color: #FFF;
+    }
+}

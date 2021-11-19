@@ -1,0 +1,116 @@
+// Header
+.header {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
+// Nav
+.nav {
+    max-width: 968px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo,
+    &__toggle {
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+    }
+
+    &__logo {
+        &:hover {
+            color: var(--first-color);
+        }
+    }
+
+    &__toggle {
+        cursor: pointer;
+
+        &:hover {
+            color: var(--first-color);
+        }
+    }
+
+    &__list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    &__link {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: var(--small-font-size);
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+
+        &:hover {
+            color: var(--first-color);
+        }
+    }
+
+    &__icon {
+        font-size: 1.2rem;
+    }
+
+    &__close {
+        position: absolute;
+        right: 1.3rem;
+        bottom: .5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--first-color);
+
+        &:hover {
+            color: var(--first-color-alt);
+        }
+    }
+    
+    &__menu {
+        // Show menu
+        &.show-menu {
+            bottom: 0;
+        }
+    }
+
+    &__btns {
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        padding-top: 5px;
+    }
+}
+
+// Button Dark/Light theme
+.change-theme {
+    color: var(--title-color);
+    margin-right: var(--mb-1);
+    cursor: pointer;
+
+    &:hover {
+        color: var(--first-color);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav {
+        &__menu {
+            position: fixed;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            background-color: var(--body-color);
+            padding: 2rem 1.5rem 4rem 1.5rem;
+            box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+            border-radius: 1.5rem 1.5rem 0 0;
+            transition: .3s;
+        }
+    }
+}

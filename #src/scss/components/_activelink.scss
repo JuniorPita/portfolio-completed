@@ -1,0 +1,29 @@
+// Active menu links
+.active-link {
+    color: var(--first-color);
+    transition: 1s ease-in-out;
+    transform: translateY(.25rem);
+    opacity: .9;
+
+    &::after {
+        content: '';
+        margin-top: 5px;
+        width: 100%;
+        height: 3px;
+        background-color: var(--first-color-alt);
+        animation-name: slidein;
+        animation-duration: .4s;
+    }
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 0%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}

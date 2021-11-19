@@ -1,0 +1,29 @@
+// Reusable CSS classes
+.section {
+    padding: 2rem 0 4rem 0;
+
+    &__title {
+        font-size: var(--h1-font-size);
+    }
+    &__subtitle {
+        display: block;
+        font-size: var(--small-font-size);
+        margin-bottom: var(--mb-3);
+    }
+    &__title,
+    &__subtitle {
+        text-align: center;
+    }
+}
+
+// Layout
+.container {
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}

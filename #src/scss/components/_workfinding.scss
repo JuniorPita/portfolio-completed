@@ -1,0 +1,29 @@
+// Work finding
+.project {
+    text-align: center;
+
+    &__bg {
+        background-color: var(--first-color-second);
+        padding-top: 3rem;
+    }
+
+    &__title {
+        font-size: var(--h2-font-size);
+        margin-bottom: var(--mb-0-75);
+    }
+
+    &__description {
+        margin-bottom: var(--mb-1-5);
+    }
+
+    &__title,
+    &__description {
+        color: #FFF;
+    }
+
+    &__img {
+        width: 232px;
+        justify-self: center;
+        margin-bottom: var(--mb-3);
+    }
+}
